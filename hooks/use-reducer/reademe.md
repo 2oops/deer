@@ -1,0 +1,1 @@
+1. 因为 reducer 其实是在下次 render 时才执行的，所以在 reducer 里，访问到的永远是新的 props 和 state。useReducer 返回的 dispatch 函数是自带了 memoize 的，不会在多次渲染时改变
